@@ -13,9 +13,10 @@
 import { defineComponent } from 'vue';
 
 
-export default defineComponent({
+ export default defineComponent({
   name: 'App',
   components: {},
+
   data(){
 return{
 name:'Link',
@@ -29,11 +30,12 @@ changeName(name:string){
 
 this.name=name
 
-
+return name;
 },
 changeAge(age:number | string){
 
   this.age=age
+  return age;
 }
 
 
